@@ -2,4 +2,7 @@
 
 # From https://github.com/smebberson/docker-alpine/tree/master/alpine-apache
 
+mkdir /etc/subversion
+touch /etc/subversion/passwd
+cp /etc/subversion.tmpl/subversion-access-control /etc/subversion/subversion-access-control
 exec /usr/bin/svnserve -d --foreground -r /home/svn --listen-port 3690;
