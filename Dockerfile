@@ -1,5 +1,5 @@
 # Alpine Linux with s6 service management
-FROM smebberson/alpine-base:3.2.0
+FROM xumj1975/alpine-base
 
 	# Install Apache2 and other stuff needed to access svn via WebDav
 	# Install svn
