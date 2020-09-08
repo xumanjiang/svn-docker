@@ -7,7 +7,7 @@ FROM xumj1975/alpine-base
 	# Create required folders
 	# Create the authentication file for http access
 	# Getting SVNADMIN interface
-RUN apk add --no-cache apache2 apache2-utils apache2-webdav mod_dav_svn &&\
+RUN apk add --no-cache apache2 apache2-utils apache2-webdav apache2-ctl mod_dav_svn &&\
 	apk add --no-cache subversion &&\
 	apk add --no-cache wget unzip php7 php7-apache2 php7-session php7-json php7-ldap &&\
 	apk add --no-cache php7-xml &&\	
